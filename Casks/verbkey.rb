@@ -10,6 +10,11 @@ cask "verbkey" do
 
   app "Grammar Improver.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-r", "-d", "com.apple.quarantine", "#{appdir}/Grammar Improver.app"]
+  end
+
   zap trash: [
     "~/Library/Application Support/GrammarImprover",
     "~/Library/Preferences/com.nishit.grammarimprover.plist",
