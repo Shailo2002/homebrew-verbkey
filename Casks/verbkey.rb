@@ -1,6 +1,6 @@
 cask "verbkey" do
-  version "1.0.0"
-  sha256 "747ad842e6ed7491b878b0d795a9b12d148c0675d94d4d6692b0e58528b98a94"
+  version "1.0.1"
+  sha256 "291b4d385d8e19d5f075732cbe22af07c395b9c009f6566012a1c210d7ee9a3d"
 
   url "https://github.com/shailo2002/verbkey-releases/releases/download/v#{version}/GrammarImprover.dmg"
 
